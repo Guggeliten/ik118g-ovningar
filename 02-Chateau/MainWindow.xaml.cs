@@ -60,7 +60,7 @@ namespace Chateau_lab
             //
             // TODO: skriv din loop här.
 
-            txtResult.Text = "Antal Château-viner: " + antalChateau;
+            txtResult.Text = $"Antal Château-viner: {antalChateau}";
         }
 
         // Knapp 2 – räkna BÅDE Château- och Amarone-viner.
@@ -77,9 +77,7 @@ namespace Chateau_lab
             //
             // TODO: skriv din loop här.
 
-            txtResult.Text =
-                "Antal Château-viner: " + antalChateau + "\n" +
-                "Antal Amarone-viner: " + antalAmarone;
+            txtResult.Text = $"Antal Château-viner: {antalChateau}\nAntal Amarone-viner: {antalAmarone}";
         }
     }
 }
