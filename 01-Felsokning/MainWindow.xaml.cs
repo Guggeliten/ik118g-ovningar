@@ -32,7 +32,7 @@ namespace Felsokning_lab
 
             double medelvardet = summan / talen.Length;
 
-            txtResult1.Text = "Programmet säger: medelvärdet är " + medelvardet;
+            txtResult1.Text = $"Programmet säger: medelvärdet är {medelvardet}";
         }
 
         // ---------- Övning 2 – Summera talen 1 till N ----------
@@ -47,7 +47,7 @@ namespace Felsokning_lab
                 summan = i;
             }
 
-            txtResult2.Text = "Programmet säger: summan är " + summan;
+            txtResult2.Text = $"Programmet säger: summan är {summan}";
         }
 
         // ---------- Övning 3 – Hitta största talet ----------
@@ -65,7 +65,7 @@ namespace Felsokning_lab
                 }
             }
 
-            txtResult3.Text = "Programmet säger: största talet är " + storstaTalet;
+            txtResult3.Text = $"Programmet säger: största talet är {storstaTalet}";
         }
 
         // ---------- Övning 4 – Räkna de jämna talen ----------
@@ -83,7 +83,7 @@ namespace Felsokning_lab
                 }
             }
 
-            txtResult4.Text = "Programmet säger: det finns " + antalJamnaTal + " jämna tal";
+            txtResult4.Text = $"Programmet säger: det finns {antalJamnaTal} jämna tal";
         }
 
         // ---------- Övning 5 – Omvandla Celsius till Fahrenheit ----------
@@ -104,7 +104,7 @@ namespace Felsokning_lab
                 meddelande = "Det är inte varmt.";
             }
 
-            txtResult5.Text = "Programmet säger: " + fahrenheit + " °F. " + meddelande;
+            txtResult5.Text = $"Programmet säger: {fahrenheit} °F. {meddelande}";
         }
 
         // ---------- Övning 6 – Nästlade loopar (skriv koden själv) ----------
