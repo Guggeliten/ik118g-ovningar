@@ -1,0 +1,56 @@
+﻿<Window
+    x:Class="Chateau_lab.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Chateau_lab"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Château-viner"
+    Width="520"
+    Height="480"
+    mc:Ignorable="d">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.Row="0"
+            Margin="0,0,0,8"
+            FontSize="16"
+            FontWeight="Bold"
+            Text="Château-viner" />
+
+        <TextBlock
+            Grid.Row="1"
+            Margin="0,0,0,8"
+            TextWrapping="Wrap"
+            Text="Räkna hur många viner i listan som har ett namn som innehåller &quot;chateau&quot;." />
+
+        <ListBox
+            x:Name="lstViner"
+            Grid.Row="2"
+            Margin="0,0,0,12"
+            FontSize="14" />
+
+        <Button
+            x:Name="btnCount"
+            Grid.Row="3"
+            Width="200"
+            Height="34"
+            HorizontalAlignment="Left"
+            Click="OnCountClick"
+            Content="Räkna Château-viner" />
+
+        <TextBlock
+            x:Name="txtResult"
+            Grid.Row="4"
+            Margin="0,12,0,0"
+            FontSize="15"
+            FontWeight="SemiBold" />
+    </Grid>
+</Window>
