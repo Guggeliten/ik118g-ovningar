@@ -1,36 +1,41 @@
-﻿# Château-viner
+﻿# Château- och Amarone-viner
 
 ## Uppgift
-Du har en lista (array) med vinnamn i programmet. Ta reda på **hur många viner som har ett namn som innehåller "chateau"**.
+Du har en lista (array) med vinnamn i programmet. Det finns **två knappar**:
 
-När du klickar på knappen **Räkna Château-viner** ska antalet visas.
+- **Räkna Château** – räkna hur många viner som har ett namn som innehåller "chateau".
+- **Räkna båda** – räkna hur många som innehåller "chateau" **och** hur många som innehåller "amarone".
 
-Skriv din kod i metoden `OnCountClick` i `MainWindow.xaml.cs`.
+Skriv din kod i metoderna `OnCountChateauClick` och `OnCountBothClick` i `MainWindow.xaml.cs`.
 
 ### Exempel
-Med vinerna som redan finns i programmet är rätt svar **3**.
+Med vinerna som finns i programmet är rätt svar **6 Château-viner** och **3 Amarone-viner**.
 
 ## Mål
 - Träna på att **loopa igenom en array**.
 - Använda en **sträng-metod** för att söka efter text.
-- Räkna med en **räknare** (`int`).
+- Använda en och flera **räknare** (`int`).
 
 ## Tips
-- Vi behöver nog **gå igenom (loopa) alla viner** i listan – en i taget.
-- För varje vin: **kontrollera om namnet innehåller** "chateau".
-  - Det finns en färdig metod på en sträng som letar efter text i den.
-  - Tänk på stora och små bokstäver – det finns en metod som gör om en text till små bokstäver innan du jämför.
-- Om namnet innehåller "chateau": **öka räknaren** med 1.
-- Visa räknaren till slut.
+- Gå igenom (loopa) alla viner i listan – en i taget.
+- Kontrollera om ett namn **innehåller** ett visst ord.
+  - Det finns en färdig sträng-metod som letar efter text.
+  - Tänk på stora/små bokstäver – det finns en metod som gör om text till små bokstäver innan du jämför.
+- **Räkna Château:** en räknare, ett villkor.
+- **Räkna båda:** samma loop, men **två räknare** och **två villkor**.
 
-> I konstruktorn finns redan en loop som visar vinerna i listan. Du kan titta på den som ett exempel på hur en loop över arrayen ser ut.
+> I konstruktorn finns redan en loop som visar vinerna i listan – titta på den som exempel.
 
-### Pseudokod
+### Pseudokod – räkna båda
 
 ```
-antal = 0
+antalChateau = 0
+antalAmarone = 0
 för varje vin i listan:
-    om vinets namn (i små bokstäver) innehåller "chateau":
-        antal = antal + 1
-visa antal
+    namn = vinets namn i små bokstäver
+    om namn innehåller "chateau":
+        antalChateau = antalChateau + 1
+    om namn innehåller "amarone":
+        antalAmarone = antalAmarone + 1
+visa antalChateau och antalAmarone
 ```

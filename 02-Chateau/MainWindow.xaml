@@ -5,9 +5,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Chateau_lab"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="Château-viner"
+    Title="Château- och Amarone-viner"
     Width="520"
-    Height="480"
+    Height="520"
     mc:Ignorable="d">
     <Grid Margin="16">
         <Grid.RowDefinitions>
@@ -23,13 +23,13 @@
             Margin="0,0,0,8"
             FontSize="16"
             FontWeight="Bold"
-            Text="Château-viner" />
+            Text="Château- och Amarone-viner" />
 
         <TextBlock
             Grid.Row="1"
             Margin="0,0,0,8"
             TextWrapping="Wrap"
-            Text="Räkna hur många viner i listan som har ett namn som innehåller &quot;chateau&quot;." />
+            Text="Räkna hur många viner i listan som innehåller &quot;chateau&quot; respektive &quot;amarone&quot;." />
 
         <ListBox
             x:Name="lstViner"
@@ -37,14 +37,23 @@
             Margin="0,0,0,12"
             FontSize="14" />
 
-        <Button
-            x:Name="btnCount"
+        <StackPanel
             Grid.Row="3"
-            Width="200"
-            Height="34"
-            HorizontalAlignment="Left"
-            Click="OnCountClick"
-            Content="Räkna Château-viner" />
+            Orientation="Horizontal">
+            <Button
+                x:Name="btnCountChateau"
+                Width="160"
+                Height="34"
+                Margin="0,0,8,0"
+                Click="OnCountChateauClick"
+                Content="Räkna Château" />
+            <Button
+                x:Name="btnCountBoth"
+                Width="160"
+                Height="34"
+                Click="OnCountBothClick"
+                Content="Räkna båda" />
+        </StackPanel>
 
         <TextBlock
             x:Name="txtResult"

@@ -14,6 +14,6 @@
 | Mapp | Innehåll |
 |------|----------|
 | `01-Felsokning` | Finn felen + nästlade loopar |
-| `02-Chateau` | Loopa en array + söka i text (räkna Château-viner) |
+| `02-Chateau` | Loopa en array + söka i text (räkna Château- och Amarone-viner) |
 
 *(Fler set läggs till efter hand.)*
